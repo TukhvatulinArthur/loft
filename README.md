@@ -35,4 +35,4 @@ JS код неоптимизирован и требует дополнител�
     
 GitHub Pages: 
 
-        https://tukhvatulinarthur.github.io/loft/build/index.html
+    https://tukhvatulinarthur.github.io/loft/build/index.html
