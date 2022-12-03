@@ -26,7 +26,7 @@ Figma:
     https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1
       
 Полный адаптив. Используется localStorage. Без jQuery.      
-JS код неоптимизирован и требует дополнительных правок.
+JS код неоптимизирован и требует дополнительных правок в будущем.
 
 Запуск:
 
