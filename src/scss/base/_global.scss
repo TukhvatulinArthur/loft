@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: $minWidth + px;
+  font-family: $fontFamily;
+  color: $mainColor;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 $safePadding + px;
+  margin: 0 auto;
+}
+
+._none {
+  display: none;
+}
+
+.notification {
+  position: fixed;
+  padding: 15px;
+  background-color: beige;
+  max-width: 230px;
+  top: 25%;
+  left: 2%;
+  font-size: 14px;
+  z-index: 55;
+  border-radius: 8px;
+  animation-name: notification;
+  animation-duration: 1.5s;
+}
+
+@keyframes notification {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

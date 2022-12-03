@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/components/_head.html',{ "title":"Каталог товаров" })
+  <body>
+    <div class="wrapper">
+      @@include('./html/components/_header.html')
+      <main class="page">
+        <div class="container">
+          @@include('./html/components/_categories.html')
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Гостинные</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Мягкая мебель</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Диваны</a></li>
+            </ul>
+          </div>
+          <section class="catalog">
+            <div class="catalog__sort-wrapper">
+              <button class="catalog__sort-filter-button" type="button">Фильтр</button>
+              <div class="catalog__sort">
+                <span>Сортировать</span> <span></span>
+                <ul class="catalog__sort-sublist">
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_desc" type="button">по убыванию цены</button>
+                  </li>
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_asc" type="button">по возрастанию цены</button>
+                  </li>
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_pop" type="button">по популярности</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog__wrapper">
+              <aside class="catalog__filter">
+                <div class="catalog__filter-close-wrapper">
+                  <span class="catalog__filter-close-title">Фильтр</span>
+                  <button class="catalog__filter-close-button"><img src="../img/icons/filter-close.svg" alt="" /></button>
+                </div>
+                <form class="catalog__form" action="">
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Раздел</span>
+                    <ul class="catalog__widget-parts">
+                      <li class="catalog__widget-part">Гостинные</li>
+                      <li class="catalog__widget-part">Мягкая мебель</li>
+                      <li class="catalog__widget-part">Диваны</li>
+                    </ul>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Цена</span>
+                    <div class="rangeSlider" data-min="0" data-max="200000"></div>
+                    <div class="catalog__widget-prices">
+                      <span class="catalog__widget-price catalog__widget-price_start">5 000</span>
+                      <span class="catalog__widget-price catalog__widget-price_end">102 000</span>
+                    </div>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Цвет</span>
+                    <div class="catalog__widget-colours">
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_red" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_green" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_lightgrey" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_darkgrey" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_darkbrown" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_lightbrown" type="checkbox" required />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Бренд</span>
+                    <div class="catalog__widget-brands">
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Динс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Кускен
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Эби
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Реджио
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Сайле
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                    </div>
+                    <button class="catalog__widget-show-more" type="button">Показать ещё</button>
+                  </div>
+                </form>
+              </aside>
+              <section class="cards cards_catalog">
+                <ul class="cards__list">
+                  <!-- <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-01.webp" type="image/webp" />
+                          <img src="img/cards/card-01.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Барные стулья</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">2 300</div>
+                          <div class="cards__item-oldprice _none">1 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-02.webp" type="image/webp" />
+                          <img src="img/cards/card-02.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Толикс-2 White Gloss</div>
+                        <div class="cards__item-category">Барные стулья</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">4 690</div>
+                          <div class="cards__item-oldprice _none">3 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-03.webp" type="image/webp" />
+                          <img src="img/cards/card-03.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Динс Velvet Yellow Динс Velvet Yellow Динс Velvet Yellow Динс Velvet Yellow</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">283 234 490</div>
+                          <div class="cards__item-oldprice">373 234 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-04.webp" type="image/webp" />
+                          <img src="img/cards/card-04.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Кускен Navy Blue</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">22 300</div>
+                          <div class="cards__item-oldprice">14 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-05.webp" type="image/webp" />
+                          <img src="img/cards/card-05.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Шерона Barhat Grey</div>
+                        <div class="cards__item-category">Двуспальные кровати</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">4 690</div>
+                          <div class="cards__item-oldprice">3 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-06.webp" type="image/webp" />
+                          <img src="img/cards/card-06.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Авиньон-1</div>
+                        <div class="cards__item-category">Буфеты</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-07.webp" type="image/webp" />
+                          <img src="img/cards/card-07.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Стелла Дуб Сонома</div>
+                        <div class="cards__item-category">Комоды</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-08.webp" type="image/webp" />
+                          <img src="img/cards/card-08.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Равенна-1 Light</div>
+                        <div class="cards__item-category">Комоды</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-09.webp" type="image/webp" />
+                          <img src="img/cards/card-09.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Бенфлит Grey</div>
+                        <div class="cards__item-category">Журнальные столы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">7 290</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-10.webp" type="image/webp" />
+                          <img src="img/cards/card-10.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Тиффани Вудлайн Крем</div>
+                        <div class="cards__item-category">Письменные столы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">10 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-11.webp" type="image/webp" />
+                          <img src="img/cards/card-11.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Шкафы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">19 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-12.webp" type="image/webp" />
+                          <img src="img/cards/card-12.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Лайт-3-170-240 Белый</div>
+                        <div class="cards__item-category">Шкафы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">27 290</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-13.webp" type="image/webp" />
+                          <img src="img/cards/card-13.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Вилли Pink</div>
+                        <div class="cards__item-category">Детский диван</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">21 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-14.webp" type="image/webp" />
+                          <img src="img/cards/card-14.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Сан-Паулу Velvet Brown</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">25 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-15.webp" type="image/webp" />
+                          <img src="img/cards/card-15.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Полки</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">10 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-16.webp" type="image/webp" />
+                          <img src="img/cards/card-16.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Полки</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">19 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li> -->
+                </ul>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+      @@include('./html/components/_footer.html')
+    </div>
+    @@include('./html/components/_popup.html')
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

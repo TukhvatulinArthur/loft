@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/components/_head.html',{ "title":"Карточка товара" })
+  <body>
+    <div class="wrapper">
+      @@include('./html/components/_header.html')
+      <main class="page">
+        <div class="container">
+          @@include('./html/components/_categories.html')
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Гостинные</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Мягкая мебель</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Диваны</a></li>
+            </ul>
+          </div>
+          <section class="card">
+            <div class="card__wrapper">
+              <div class="card__column">
+                <div class="card__slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="card__slider-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                        <img class="card__slider-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                      </picture>
+                    </div>
+                    <div class="card__slider-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                        <img class="card__slider-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                      </picture>
+                    </div>
+                    <div class="card__slider-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                        <img class="card__slider-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                      </picture>
+                    </div>
+                    <div class="card__slider-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                        <img class="card__slider-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                      </picture>
+                    </div>
+                    <div class="card__slider-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                        <img class="card__slider-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__slider-object">
+                  <div class="card__slider-thumbs swiper">
+                    <div class="swiper-wrapper">
+                      <div class="card__slider-thumbs-slide swiper-slide">
+                        <picture>
+                          <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                          <img class="card__slider-thumbs-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                        </picture>
+                      </div>
+                      <div class="card__slider-thumbs-slide swiper-slide">
+                        <picture>
+                          <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                          <img class="card__slider-thumbs-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                        </picture>
+                      </div>
+                      <div class="card__slider-thumbs-slide swiper-slide">
+                        <picture>
+                          <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                          <img class="card__slider-thumbs-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                        </picture>
+                      </div>
+                      <div class="card__slider-thumbs-slide swiper-slide">
+                        <picture>
+                          <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                          <img class="card__slider-thumbs-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                        </picture>
+                      </div>
+                      <div class="card__slider-thumbs-slide swiper-slide">
+                        <picture>
+                          <source srcset="img/cardSlider/image-01.webp" type="image/webp" />
+                          <img class="card__slider-thumbs-img" src="img/cardSlider/image-01.png" loading="lazy" alt="Диван Velvet Yellow" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__slider-thumbs-prev card__slider-thumbs-control swiper-button-prev">
+                    <img src="./img/icons/arrow.svg" alt="" />
+                  </div>
+                  <div class="card__slider-thumbs-next card__slider-thumbs-control swiper-button-next">
+                    <img src="./img/icons/arrow.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="card__column">
+                <form id="form" action="">
+                  <div class="card__rating-stars">
+                    <input class="card__rating-input" id="oneStar" type="radio" name="groupRadio" value="5" aria-label="Отлично" />
+                    <label class="card__rating-label" for="oneStar"><img src="./img/icons/star-off.svg" alt="" /></label>
+                    <input class="card__rating-input" id="twoStar" type="radio" name="groupRadio" value="4" aria-label="Хорошо" />
+                    <label class="card__rating-label" for="twoStar"><img src="./img/icons/star-off.svg" alt="" /></label>
+                    <input class="card__rating-input" id="threeStar" type="radio" name="groupRadio" value="3" aria-label="Нормально" />
+                    <label class="card__rating-label" for="threeStar"><img src="./img/icons/star-off.svg" alt="" /></label>
+                    <input class="card__rating-input" id="fourStar" type="radio" name="groupRadio" value="2" aria-label="Плохо" />
+                    <label class="card__rating-label" for="fourStar"><img src="./img/icons/star-off.svg" alt="" /></label>
+                    <input class="card__rating-input" id="fiveStar" type="radio" name="groupRadio" value="1" aria-label="Ужасно" />
+                    <label class="card__rating-label" for="fiveStar"><img src="./img/icons/star-off.svg" alt="" /></label>
+                  </div>
+                  <div class="card__title">Динс Velvet Yellow</div>
+                  <div class="card__category-title">Диваны</div>
+                  <div class="card__actions-wrapper">
+                    <div class="card__price">4 690</div>
+                    <button class="card__button" type="submit">Купить</button>
+                    <button class="card__wishlist-button" type="button">Добавить в желаемое</button>
+                  </div>
+                  <div class="card__selects-wrapper">
+                    <div class="card__selects-column">
+                      <div class="card__select-title">Цвет</div>
+                      <div class="card__select-wrapper">
+                        <select class="card__select-colour yellow" name="colour">
+                          <option value="yellow" selected></option>
+                          <option value="red"></option>
+                          <option value="green"></option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="card__selects-column">
+                      <div class="card__select-title">Количество</div>
+                      <div class="card__select-wrapper">
+                        <select class="card__select-qty" name="qty">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="card__selects-column">
+                      <div class="card__select-title">Размер (Д × Ш × В)</div>
+                      <div class="card__select-wrapper">
+                        <select class="card__select-size" name="size">
+                          <option value="218 СМ × 95 СМ × 90 СМ">218 СМ × 95 СМ × 90 СМ</option>
+                          <option value="232 СМ × 75 СМ × 80 СМ">232 СМ × 75 СМ × 80 СМ</option>
+                          <option value="187 СМ × 55 СМ × 70 СМ">187 СМ × 55 СМ × 70 СМ</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__description-wrapper">
+                    <div class="card__description-title">Описание</div>
+                    <p class="card__description-text">
+                      Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван «Динс». Сдержанный скандинавский дизайн
+                      украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для
+                      размеренного отдыха в кругу семьи или компании друзей!
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card__info-wrapper">
+              <div class="card__info-tabs-wrapper tabs">
+                <ul class="tabs__list">
+                  <li class="tabs__item"><button class="tabs__button tab _active" data-tab-target="tab 1">Характеристики</button></li>
+                  <li class="tabs__item"><button class="tabs__button tab" data-tab-target="tab 2">Отзывы</button></li>
+                  <li class="tabs__item"><button class="tabs__button tab" data-tab-target="tab 3">Доставка и оплата</button></li>
+                </ul>
+                <div class="tabs__content content">
+                  <div class="content__inner _active" data-tab-content="tab 1">
+                    <div class="content__row">
+                      <div class="content__column">
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Размер</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">218 × 95 × 90 (Дл. × Шир. × Выс.)</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Спальное место</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">195 × 144 × 44 (Дл. × Шир. × Выс.)</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Посадочное место</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">50 × 44 (Глуб. × Выс.)</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Каркас</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">массив, фанера, ДВП, пружинная змейка</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Механизм</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">пантограф</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Материал ножек</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">массив</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Наполнение подушек</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">крошка ППУ, холлофайбер</div>
+                        </div>
+                      </div>
+                      <div class="content__column">
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Бельевой ящик</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">есть</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Зарядное устройство USB</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">нет</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Съемный чехол</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">нет</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Декоративные подушки</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">есть</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Вариант доставки</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">в разобранном виде</div>
+                        </div>
+                        <div class="content__info-row">
+                          <div class="content__info-row-inner">
+                            <div class="content__info-row-key">Производитель</div>
+                            <div class="content__dotted"></div>
+                          </div>
+                          <div class="content__info-row-value">Россия</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__inner" data-tab-content="tab 2">
+                    <h3 class="content__header">Отзывы</h3>
+                    <p class="content__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, et. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, pariatur.
+                    </p>
+                  </div>
+                  <div class="content__inner" data-tab-content="tab 3">
+                    <h3 class="content__header">Доставка и оплата</h3>
+                    <p class="content__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, et. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi consectetur necessitatibus earum, assumenda consequatur expedita placeat non magnam iste laudantium repudiandae doloribus
+                      pariatur vitae similique, tempora est dicta ab nulla!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          @@include('./html/components/_cards.html')
+        </div>
+      </main>
+      @@include('./html/components/_footer.html')
+    </div>
+    @@include('./html/components/_popup.html')
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

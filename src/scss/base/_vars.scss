@@ -1,0 +1,10 @@
+$fontFamily: "Roboto";
+
+$maxWidth: 1920;
+$minWidth: 320;
+$maxWidthContainer: 1170; //+30px добавить для отступов безопасности
+$safePadding: 15;
+$containerWidth: $maxWidthContainer + $safePadding; // для миксина adaptiveValue
+
+$accentColor: #245462;
+$mainColor: #414141;

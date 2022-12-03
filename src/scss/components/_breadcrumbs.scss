@@ -1,0 +1,32 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 25px;
+    row-gap: 12px;
+  }
+
+  &__item {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "/";
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%) translateX(50%);
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 14px;
+    color: #969696;
+  }
+}

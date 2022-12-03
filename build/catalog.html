@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.min.css" />
+  <title>Каталог товаров</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <nav class="header__menu" data-da=".header__bottom-inner, 992, 0">
+          <div class="header__menu-top">
+            <span class="header__menu-title">Меню</span>
+            <button class="header__menu-button-close" type="button"><img src="./img/icons/menu-close.svg" alt="Иконка закрытия меню" /></button>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link _icon-home" href="index.html">Главная</a></li>
+            <li class="header__menu-item"><a class="header__menu-link _icon-about" href="#">О нас</a></li>
+            <li class="header__menu-item"><a class="header__menu-link _icon-contacts" href="#">Контакты</a></li>
+          </ul>
+          <span class="header__category-title">Категории</span>
+          <ul class="header__category-list">
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#kitchen"></use>
+                </svg>
+                <span>Кухни</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#bedroom"></use>
+                </svg>
+                <span>Спальни</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#livingroom"></use>
+                </svg>
+                <span>Гостинные</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#closet"></use>
+                </svg>
+                <span>Прихожие</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#office"></use>
+                </svg>
+                <span>Офисная мебель</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#childrensroom"></use>
+                </svg>
+                <span>Детская</span>
+              </a>
+            </li>
+            <li class="header__category-item _icon-stock">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#stock"></use>
+                </svg>
+                <span>Акция</span>
+              </a>
+            </li>
+            <li class="header__category-item _icon-new">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#new"></use>
+                </svg>
+                <span>Новинки</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#mattress"></use>
+                </svg>
+                <span>Матрасы</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#armchair"></use>
+                </svg>
+                <span>Мягкая мебель</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#cupboard"></use>
+                </svg>
+                <span>Шкафы</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__info-links" data-da=".header__bottom-inner, 992, 3">
+          <a class="header__info-link _icon-phone" href="tel:89648999119">8 (964) 89 99 119</a>
+          <a class="header__info-link _icon-delivery" href="#">Доставка</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <button class="menu-burger" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="header__logo" href="index.html">
+          <img src="./img/icons/logo.svg" loading="lazy" alt="Логотип LOFT Мебель" />
+        </a>
+        <form class="header__search-form">
+          <button class="header__form-button" type="submit"><img src="./img/icons/search.svg" alt="Иконка поиска по магазину" /></button>
+          <input class="header__form-input" type="search" placeholder="Поиск" />
+        </form>
+        <div class="header__actions">
+          <a class="header__action-link" href="#"><img src="./img/icons/wishlist.svg" alt="Иконка избранных товаров" /></a>
+          <a class="header__action-link _in-cart" href="cart.html"
+            ><span class="header__cart-qty"></span><img src="./img/icons/cart.svg" alt="Иконка корзины"
+          /></a>
+          <a class="header__action-link" href="#"><img src="./img/icons/user.svg" alt="Иконка входа в личный кабинет" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div class="container">
+          <div class="category">
+  <ul class="category__list">
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#kitchen"></use>
+        </svg>
+        <span class="category__item-title">Кухни</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#bedroom"></use>
+        </svg>
+        <span class="category__item-title">Спальни</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#livingroom"></use>
+        </svg>
+        <span class="category__item-title">Гостинные</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#closet"></use>
+        </svg>
+        <span class="category__item-title">Прихожие</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#office"></use>
+        </svg>
+        <span class="category__item-title">Офисная мебель</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#childrensroom"></use>
+        </svg>
+        <span class="category__item-title">Детская</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item category__item_stock"><a class="category__stock-link" href="#">Акция</a></li>
+    <li class="category__item category__item_etc">
+      <span>&#8226;</span>
+      <span>&#8226;</span>
+      <span>&#8226;</span>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="#">Новинки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Шкафы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Матрасы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Мягкая мебель</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="category__list_mobile">
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#stock"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Акция</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#new"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Новинки</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#kitchen"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Кухни</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#bedroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Спальни</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#livingroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Гостинные</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#closet"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Прихожие</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#office"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Офисная мебель</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#childrensroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Детская</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#mattress"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Матрассы</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#armchair"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Мягкая мебель</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#cupboard"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Шкафы</span>
+    </li>
+  </ul>
+</div>
+
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Гостинные</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Мягкая мебель</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Диваны</a></li>
+            </ul>
+          </div>
+          <section class="catalog">
+            <div class="catalog__sort-wrapper">
+              <button class="catalog__sort-filter-button" type="button">Фильтр</button>
+              <div class="catalog__sort">
+                <span>Сортировать</span> <span></span>
+                <ul class="catalog__sort-sublist">
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_desc" type="button">по убыванию цены</button>
+                  </li>
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_asc" type="button">по возрастанию цены</button>
+                  </li>
+                  <li class="catalog__sort-subitem">
+                    <button class="catalog__sort-button catalog__sort-button_pop" type="button">по популярности</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog__wrapper">
+              <aside class="catalog__filter">
+                <div class="catalog__filter-close-wrapper">
+                  <span class="catalog__filter-close-title">Фильтр</span>
+                  <button class="catalog__filter-close-button"><img src="../img/icons/filter-close.svg" alt="" /></button>
+                </div>
+                <form class="catalog__form" action="">
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Раздел</span>
+                    <ul class="catalog__widget-parts">
+                      <li class="catalog__widget-part">Гостинные</li>
+                      <li class="catalog__widget-part">Мягкая мебель</li>
+                      <li class="catalog__widget-part">Диваны</li>
+                    </ul>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Цена</span>
+                    <div class="rangeSlider" data-min="0" data-max="200000"></div>
+                    <div class="catalog__widget-prices">
+                      <span class="catalog__widget-price catalog__widget-price_start">5 000</span>
+                      <span class="catalog__widget-price catalog__widget-price_end">102 000</span>
+                    </div>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Цвет</span>
+                    <div class="catalog__widget-colours">
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_red" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_green" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_lightgrey" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_darkgrey" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_darkbrown" type="checkbox" required />
+                      </label>
+                      <label class="catalog__widget-colour-label">
+                        <input class="catalog__widget-colour-input catalog__widget-colour-input_lightbrown" type="checkbox" required />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="catalog__widget">
+                    <span class="catalog__widget-title">Бренд</span>
+                    <div class="catalog__widget-brands">
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Динс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Кускен
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Эби
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Реджио
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Сайле
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                      <div class="catalog__widget-label-wrapper _none">
+                        <label class="catalog__widget-brand-label">
+                          <input class="catalog__widget-brand-input" type="checkbox" required />
+                          Ещё один чекбокс
+                        </label>
+                      </div>
+                    </div>
+                    <button class="catalog__widget-show-more" type="button">Показать ещё</button>
+                  </div>
+                </form>
+              </aside>
+              <section class="cards cards_catalog">
+                <ul class="cards__list">
+                  <!-- <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-01.webp" type="image/webp" />
+                          <img src="img/cards/card-01.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Барные стулья</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">2 300</div>
+                          <div class="cards__item-oldprice _none">1 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-02.webp" type="image/webp" />
+                          <img src="img/cards/card-02.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Толикс-2 White Gloss</div>
+                        <div class="cards__item-category">Барные стулья</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">4 690</div>
+                          <div class="cards__item-oldprice _none">3 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-03.webp" type="image/webp" />
+                          <img src="img/cards/card-03.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Динс Velvet Yellow Динс Velvet Yellow Динс Velvet Yellow Динс Velvet Yellow</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">283 234 490</div>
+                          <div class="cards__item-oldprice">373 234 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-04.webp" type="image/webp" />
+                          <img src="img/cards/card-04.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Кускен Navy Blue</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">22 300</div>
+                          <div class="cards__item-oldprice">14 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-05.webp" type="image/webp" />
+                          <img src="img/cards/card-05.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Шерона Barhat Grey</div>
+                        <div class="cards__item-category">Двуспальные кровати</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">4 690</div>
+                          <div class="cards__item-oldprice">3 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-06.webp" type="image/webp" />
+                          <img src="img/cards/card-06.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Авиньон-1</div>
+                        <div class="cards__item-category">Буфеты</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-07.webp" type="image/webp" />
+                          <img src="img/cards/card-07.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Стелла Дуб Сонома</div>
+                        <div class="cards__item-category">Комоды</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-08.webp" type="image/webp" />
+                          <img src="img/cards/card-08.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Равенна-1 Light</div>
+                        <div class="cards__item-category">Комоды</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">28 490</div>
+                          <div class="cards__item-oldprice">37 990</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-09.webp" type="image/webp" />
+                          <img src="img/cards/card-09.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Бенфлит Grey</div>
+                        <div class="cards__item-category">Журнальные столы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">7 290</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-10.webp" type="image/webp" />
+                          <img src="img/cards/card-10.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Тиффани Вудлайн Крем</div>
+                        <div class="cards__item-category">Письменные столы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">10 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-11.webp" type="image/webp" />
+                          <img src="img/cards/card-11.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Шкафы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">19 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-12.webp" type="image/webp" />
+                          <img src="img/cards/card-12.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Лайт-3-170-240 Белый</div>
+                        <div class="cards__item-category">Шкафы</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">27 290</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-13.webp" type="image/webp" />
+                          <img src="img/cards/card-13.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Вилли Pink</div>
+                        <div class="cards__item-category">Детский диван</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">21 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-14.webp" type="image/webp" />
+                          <img src="img/cards/card-14.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Сан-Паулу Velvet Brown</div>
+                        <div class="cards__item-category">Диваны</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">25 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount _none">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-15.webp" type="image/webp" />
+                          <img src="img/cards/card-15.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Полки</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">10 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="cards__item">
+                    <a class="cards__item-link" href="">
+                      <div class="cards__item-top">
+                        <ul class="cards__item-labels">
+                          <li class="cards__item-label cards__item-label_discount">-25%</li>
+                        </ul>
+                        <button class="cards__item-favourite" type="button"><img src="./img/icons/wishlist.svg" alt="" /></button>
+                      </div>
+                      <div class="cards__item-middle">
+                        <picture>
+                          <source srcset="img/cards/card-16.webp" type="image/webp" />
+                          <img src="img/cards/card-16.jpg" loading="lazy" alt="Image" />
+                        </picture>
+                      </div>
+                      <div class="cards__item-bottom">
+                        <div class="cards__item-title">Валенсия Beige</div>
+                        <div class="cards__item-category">Полки</div>
+                        <div class="cards__item-price-wrapper">
+                          <div class="cards__item-newprice">19 990</div>
+                          <div class="cards__item-oldprice _none">7 290</div>
+                        </div>
+                        <div class="cards__item-hover">
+                          <div class="cards__item-size-title">Размеры</div>
+                          <div class="cards__item-size-row">
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Ширина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Глубина</div>
+                              <div class="cards__item-size-number">43 см</div>
+                            </div>
+                            <div class="cards__item-size-column">
+                              <div class="cards__item-size-dimension">Высота</div>
+                              <div class="cards__item-size-number">77 см</div>
+                            </div>
+                          </div>
+                          <button class="cards__item-button" type="button">Добавить в корзину</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li> -->
+                </ul>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__row">
+      <div class="footer__column">
+        <span class="footer__nav-title">Навигация</span>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Кухни</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Прихожие</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Шкафы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Спальни</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Офисная мебель</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Матрасы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гостинные</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Детская</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Мягкая мебель</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column">
+        <span class="footer__logo">LM</span>
+        <address class="footer__address">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</address>
+      </div>
+    </div>
+    <div class="footer__row">
+      <div class="footer__actions">
+        <a class="footer__action footer__action_red" href="#">Акция</a>
+        <a class="footer__action" href="#">Новинки</a>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__contact footer__contact_phone" href="tel:89648999119">8 (964) 89 99 119</a>
+        <a class="footer__contact footer__contact_instagram" href="#">Instagram</a>
+        <a class="footer__contact footer__contact_email" href="mailto:mebel_loft_anapa@mail.ru">mebel_loft_anapa@mail.ru</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

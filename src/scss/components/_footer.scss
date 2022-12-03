@@ -1,0 +1,146 @@
+.footer {
+  background: #ffffff;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+  padding-top: 54px;
+  padding-bottom: 32px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+    @media (max-width: 768px) {
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+
+  &__nav-title {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    margin-top: 10px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    gap: 7px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $mainColor;
+    transition: all 0.3s;
+    &:hover {
+      color: $accentColor;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__action {
+    color: $mainColor;
+  }
+
+  &__action_red {
+    color: #d74444;
+  }
+
+  &__logo {
+    color: #000;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+  }
+
+  &__address {
+    margin-top: 20px;
+    max-width: 171px;
+    font-style: normal;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      row-gap: 12px;
+    }
+  }
+
+  &__contact {
+    position: relative;
+    color: $mainColor;
+    transition: all 0.3s;
+    &::before {
+      position: absolute;
+      left: 0;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__contact_phone {
+    padding-left: 24px;
+    &::before {
+      content: url(../img/icons/phone_black.svg);
+    }
+  }
+  &__contact_instagram {
+    padding-left: 24px;
+    text-transform: uppercase;
+    &::before {
+      content: url(../img/icons/instagram.svg);
+    }
+  }
+  &__contact_email {
+    padding-left: 24px;
+    &::before {
+      content: url(../img/icons/email.svg);
+    }
+  }
+}

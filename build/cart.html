@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.min.css" />
+  <title>Корзина</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <nav class="header__menu" data-da=".header__bottom-inner, 992, 0">
+          <div class="header__menu-top">
+            <span class="header__menu-title">Меню</span>
+            <button class="header__menu-button-close" type="button"><img src="./img/icons/menu-close.svg" alt="Иконка закрытия меню" /></button>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link _icon-home" href="index.html">Главная</a></li>
+            <li class="header__menu-item"><a class="header__menu-link _icon-about" href="#">О нас</a></li>
+            <li class="header__menu-item"><a class="header__menu-link _icon-contacts" href="#">Контакты</a></li>
+          </ul>
+          <span class="header__category-title">Категории</span>
+          <ul class="header__category-list">
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#kitchen"></use>
+                </svg>
+                <span>Кухни</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#bedroom"></use>
+                </svg>
+                <span>Спальни</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#livingroom"></use>
+                </svg>
+                <span>Гостинные</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#closet"></use>
+                </svg>
+                <span>Прихожие</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#office"></use>
+                </svg>
+                <span>Офисная мебель</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#childrensroom"></use>
+                </svg>
+                <span>Детская</span>
+              </a>
+            </li>
+            <li class="header__category-item _icon-stock">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#stock"></use>
+                </svg>
+                <span>Акция</span>
+              </a>
+            </li>
+            <li class="header__category-item _icon-new">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#new"></use>
+                </svg>
+                <span>Новинки</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#mattress"></use>
+                </svg>
+                <span>Матрасы</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#armchair"></use>
+                </svg>
+                <span>Мягкая мебель</span>
+              </a>
+            </li>
+            <li class="header__category-item">
+              <a class="header__category-link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#cupboard"></use>
+                </svg>
+                <span>Шкафы</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__info-links" data-da=".header__bottom-inner, 992, 3">
+          <a class="header__info-link _icon-phone" href="tel:89648999119">8 (964) 89 99 119</a>
+          <a class="header__info-link _icon-delivery" href="#">Доставка</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <button class="menu-burger" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="header__logo" href="index.html">
+          <img src="./img/icons/logo.svg" loading="lazy" alt="Логотип LOFT Мебель" />
+        </a>
+        <form class="header__search-form">
+          <button class="header__form-button" type="submit"><img src="./img/icons/search.svg" alt="Иконка поиска по магазину" /></button>
+          <input class="header__form-input" type="search" placeholder="Поиск" />
+        </form>
+        <div class="header__actions">
+          <a class="header__action-link" href="#"><img src="./img/icons/wishlist.svg" alt="Иконка избранных товаров" /></a>
+          <a class="header__action-link _in-cart" href="cart.html"
+            ><span class="header__cart-qty"></span><img src="./img/icons/cart.svg" alt="Иконка корзины"
+          /></a>
+          <a class="header__action-link" href="#"><img src="./img/icons/user.svg" alt="Иконка входа в личный кабинет" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div class="container">
+          <div class="category">
+  <ul class="category__list">
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#kitchen"></use>
+        </svg>
+        <span class="category__item-title">Кухни</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#bedroom"></use>
+        </svg>
+        <span class="category__item-title">Спальни</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#livingroom"></use>
+        </svg>
+        <span class="category__item-title">Гостинные</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#closet"></use>
+        </svg>
+        <span class="category__item-title">Прихожие</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#office"></use>
+        </svg>
+        <span class="category__item-title">Офисная мебель</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item">
+      <a class="category__item-link" href="catalog.html">
+        <svg class="category__svg">
+          <use xlink:href="img/sprite.svg#childrensroom"></use>
+        </svg>
+        <span class="category__item-title">Детская</span>
+      </a>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Модульные кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Барная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Кухонные уголки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Обеденная зона</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Столешницы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Стеновые панели</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Мойки, сушилки, смесители для кухни</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Дополнительная фурнитура</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="catalog.html">Бытовая техника</a></li>
+      </ul>
+    </li>
+    <li class="category__item category__item_stock"><a class="category__stock-link" href="#">Акция</a></li>
+    <li class="category__item category__item_etc">
+      <span>&#8226;</span>
+      <span>&#8226;</span>
+      <span>&#8226;</span>
+      <ul class="category__sublist">
+        <li class="category__subitem"><a class="category__sublink" href="#">Новинки</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Шкафы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Матрасы</a></li>
+        <li class="category__subitem"><a class="category__sublink" href="#">Мягкая мебель</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="category__list_mobile">
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#stock"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Акция</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#new"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Новинки</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#kitchen"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Кухни</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#bedroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Спальни</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#livingroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Гостинные</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#closet"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Прихожие</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#office"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Офисная мебель</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#childrensroom"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Детская</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#mattress"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Матрассы</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#armchair"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Мягкая мебель</span>
+    </li>
+    <li class="category__list-item_mobile">
+      <a class="category__list-link_mobile" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#cupboard"></use>
+        </svg>
+      </a>
+      <span class="category__list-title_mobile">Шкафы</span>
+    </li>
+  </ul>
+</div>
+
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
+            </ul>
+          </div>
+          <section class="cart">
+            <div class="cart__top-row">
+              <div class="cart__title">Ваша корзина</div>
+              <div class="cart__qty-title"><span class="cart__qty"></span><span class="cart__word"></span></div>
+            </div>
+            <div class="cart__empty"></div>
+            <div class="cart__products-wrapper">
+              <ul class="cart__products">
+                <!-- <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-01.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-01.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Стелла Дуб Сонома</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount _none">-25%</div>
+                      <div class="cart__product-oldprice _none">37 990</div>
+                      <div class="cart__product-price">16 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Бежевый</span>
+                      <div class="cart__product-colour-print _beige"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">32</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">58 СМ × 15 СМ × 30 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-04.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-04.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-25%</div>
+                      <div class="cart__product-oldprice">37 990</div>
+                      <div class="cart__product-price">16 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Тёмно-синий</span>
+                      <div class="cart__product-colour-print"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-06.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-06.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-555%</div>
+                      <div class="cart__product-oldprice">437 990</div>
+                      <div class="cart__product-price">216 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Розовый</span>
+                      <div class="cart__product-colour-print _pink"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-03.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-03.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-555%</div>
+                      <div class="cart__product-oldprice">437 990</div>
+                      <div class="cart__product-price">216 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Тёмно-серый</span>
+                      <div class="cart__product-colour-print _dark-grey"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li> -->
+              </ul>
+              <ul class="cart__products cart__products_mobile">
+                <!-- <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-09.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-09.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Шерона Barhat Grey</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">12</span>
+                      <div class="cart__product-price_mobile cart__product-price">216 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">537 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-серый</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print _dark-grey"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">118 СМ × 5 СМ × 910 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-13.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-13.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Вилли Pink Вилли Pink Вилли Pink Вилли Pink Вилли Pink</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Розовый</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print _pink"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-01.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-01.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-синий</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-14.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-14.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-синий</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+            <div class="cart__total-row">
+              <div class="cart__total-title">Итоговая стоимость:</div>
+              <div class="cart__total">0</div>
+              <a class="cart__total-button" href="#">Оформить заказ</a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__row">
+      <div class="footer__column">
+        <span class="footer__nav-title">Навигация</span>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Кухни</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Прихожие</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Шкафы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Спальни</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Офисная мебель</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Матрасы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Гостинные</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Детская</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Мягкая мебель</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column">
+        <span class="footer__logo">LM</span>
+        <address class="footer__address">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</address>
+      </div>
+    </div>
+    <div class="footer__row">
+      <div class="footer__actions">
+        <a class="footer__action footer__action_red" href="#">Акция</a>
+        <a class="footer__action" href="#">Новинки</a>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__contact footer__contact_phone" href="tel:89648999119">8 (964) 89 99 119</a>
+        <a class="footer__contact footer__contact_instagram" href="#">Instagram</a>
+        <a class="footer__contact footer__contact_email" href="mailto:mebel_loft_anapa@mail.ru">mebel_loft_anapa@mail.ru</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

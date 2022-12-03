@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/components/_head.html',{ "title":"Корзина" })
+  <body>
+    <div class="wrapper">
+      @@include('./html/components/_header.html')
+      <main class="page">
+        <div class="container">
+          @@include('./html/components/_categories.html')
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
+            </ul>
+          </div>
+          <section class="cart">
+            <div class="cart__top-row">
+              <div class="cart__title">Ваша корзина</div>
+              <div class="cart__qty-title"><span class="cart__qty"></span><span class="cart__word"></span></div>
+            </div>
+            <div class="cart__empty"></div>
+            <div class="cart__products-wrapper">
+              <ul class="cart__products">
+                <!-- <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-01.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-01.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Стелла Дуб Сонома</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount _none">-25%</div>
+                      <div class="cart__product-oldprice _none">37 990</div>
+                      <div class="cart__product-price">16 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Бежевый</span>
+                      <div class="cart__product-colour-print _beige"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">32</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">58 СМ × 15 СМ × 30 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-04.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-04.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-25%</div>
+                      <div class="cart__product-oldprice">37 990</div>
+                      <div class="cart__product-price">16 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Тёмно-синий</span>
+                      <div class="cart__product-colour-print"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-06.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-06.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-555%</div>
+                      <div class="cart__product-oldprice">437 990</div>
+                      <div class="cart__product-price">216 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Розовый</span>
+                      <div class="cart__product-colour-print _pink"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product">
+                <picture class="cart__product-picture">
+                  <source srcset="img/cards/card-03.webp" type="image/webp" />
+                  <img class="cart__product-img" src="img/cards/card-03.png" loading="lazy" alt="Image" />
+                </picture>
+                <div class="cart__product-info-column">
+                  <div class="cart__product-info-row">
+                    <div class="cart__product-title">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price">
+                      <div class="cart__product-discount">-555%</div>
+                      <div class="cart__product-oldprice">437 990</div>
+                      <div class="cart__product-price">216 990</div>
+                    </div>
+                  </div>
+                  <div class="cart__product-info-inner">
+                    <div class="cart__product-colour-title">
+                      <span>Цвет:</span><span class="cart__product-colour">Тёмно-серый</span>
+                      <div class="cart__product-colour-print _dark-grey"></div>
+                    </div>
+                    <div class="cart__product-qty-title">Количество:<span class="cart__product-qty">1</span></div>
+                    <div class="cart__product-size-title">Размер(Ш×Д×В): <span class="cart__product-size">218 СМ × 95 СМ × 90 СМ</span></div>
+                  </div>
+                </div>
+
+                <div class="cart__product-remove-wrapper">
+                  <button class="cart__product-remove"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li> -->
+              </ul>
+              <ul class="cart__products cart__products_mobile">
+                <!-- <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-09.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-09.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Шерона Barhat Grey</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">12</span>
+                      <div class="cart__product-price_mobile cart__product-price">216 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">537 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-серый</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print _dark-grey"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">118 СМ × 5 СМ × 910 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-13.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-13.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Вилли Pink Вилли Pink Вилли Pink Вилли Pink Вилли Pink</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Розовый</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print _pink"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-01.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-01.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-синий</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li>
+              <li class="cart__product_mobile cart__product">
+                <div class="cart__product-info-row_mobile">
+                  <picture class="cart__product-picture_mobile cart__product-picture">
+                    <source srcset="img/cards/card-14.webp" type="image/webp" />
+                    <img class="cart__product-img_mobile cart__product-img" src="img/cards/card-14.png" loading="lazy" alt="Image" />
+                  </picture>
+                  <div class="cart__product-info-column_mobile">
+                    <div class="cart__product-title_mobile">Кускен Navy Blue</div>
+                    <div class="cart__product-info-price_mobile">
+                      <span class="cart__product-qty_mobile cart__product-qty">1</span>
+                      <div class="cart__product-price_mobile cart__product-price">16 990</div>
+                      <div class="cart__product-oldprice_mobile cart__product-oldprice">37 990</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__product-info-column_mobile">
+                  <div class="cart__product-colour-title_mobile cart__product-colour-title">
+                    <span>Цвет:</span><span class="cart__product-colour_mobile cart__product-colour">Тёмно-синий</span>
+                    <div class="cart__product-colour-print_mobile cart__product-colour-print"></div>
+                  </div>
+                  <div class="cart__product-size-title_mobile cart__product-size-title">
+                    Размер(Ш×Д×В): <span class="cart__product-size_mobile cart__product-size">218 СМ × 95 СМ × 90 СМ</span>
+                  </div>
+                </div>
+                <div class="cart__product-remove-wrapper_mobile">
+                  <button class="cart__product-remove_mobile"><img src="./img/icons/remove.svg" alt="" /></button>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+            <div class="cart__total-row">
+              <div class="cart__total-title">Итоговая стоимость:</div>
+              <div class="cart__total">0</div>
+              <a class="cart__total-button" href="#">Оформить заказ</a>
+            </div>
+          </section>
+        </div>
+      </main>
+      @@include('./html/components/_footer.html')
+    </div>
+    @@include('./html/components/_popup.html')
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

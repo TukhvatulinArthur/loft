@@ -1,0 +1,12 @@
+export const cardsList = document.querySelector(".cards__list");
+export const cartProductsWrapper = document.querySelector(".cart__products-wrapper");
+export const cartProducts = document.querySelector(".cart__products");
+export const cartProductsMobile = document.querySelector(".cart__products_mobile");
+export const cartTotal = document.querySelector(".cart__total");
+export const cartEmpty = document.querySelector(".cart__empty");
+export const cartQty = document.querySelector(".cart__qty");
+export const cartWord = document.querySelector(".cart__word");
+export const headerCartQty = document.querySelector(".header__cart-qty");
+export const headerBottom = document.querySelector(".header__bottom");
+export const headerTop = document.querySelector(".header__top");
+export const header = document.querySelector(".header");

@@ -1,0 +1,13 @@
+import "./js/libs/dynamicAdapt.js";
+import "./js/components/_menu-burger.js";
+import "./js/components/_swiper.js";
+import "./js/components/_nouislider.js";
+import "./js/components/_filter-button.js";
+import "./js/components/_card-tabs.js";
+import "./js/components/_select-colour.js";
+import "./js/components/_sticky-header.js";
+import "./js/modules/_getProductsInStorage.js";
+import "./js/modules/_addProductsToStorage.js";
+import "./js/modules/_renderProducts.js";
+import "./js/modules/_renderProductsInCart.js";
+import "./js/modules/_removeProductsFromCart.js";
