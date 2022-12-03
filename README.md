@@ -32,3 +32,7 @@ JS код неоптимизирован и требует дополнител�
 
     1. npm i
     2. gulp
+    
+GitHub Pages: 
+
+        https://tukhvatulinarthur.github.io/loft/build/index.html
