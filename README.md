@@ -25,7 +25,7 @@
     
 Figma: 
 
-    [https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1](https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1)
+   [https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1](https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1)
       
 
 Запуск:
@@ -37,4 +37,4 @@ Figma:
     
 GitHub Pages: 
 
-    [https://one-ess.github.io/loft/build/index.html](https://one-ess.github.io/loft/build/index.html)
+   [https://one-ess.github.io/loft/build/index.html](https://one-ess.github.io/loft/build/index.html)
