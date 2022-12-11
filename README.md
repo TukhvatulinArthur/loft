@@ -35,4 +35,4 @@ JS код не самый лучший, неоптимизирован, и тр�
     
 GitHub Pages: 
 
-    https://tukhvatulinarthur.github.io/loft/build/index.html
+    https://one-ess.github.io/loft/build/index.html
