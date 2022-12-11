@@ -22,17 +22,17 @@
     noUiSlider
     swiper
     
-    
-Figma: 
-
-   [https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1](https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1)
-      
 
 Запуск:
 
     1. npm i
     2. gulp
     3. gulp build - для билд сборки (опционально)
+        
+        
+Figma: 
+
+   [https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1](https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1)
     
     
 GitHub Pages: 
