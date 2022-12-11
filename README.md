@@ -8,31 +8,33 @@
     card.html       
 
 
-Реализовано: 
+Имеется: 
 
     добавление товаров в корзину.           
     удаление товаров из корзины.          
     подсчёт стоимости всех товаров в корзине.        
     подсчёт кол-ва одинаковых товаров в корзине.
     уведомление о добавлении товара в корзину.
+    localStorage для хранения товаров в корзине после перезагрузки страницы.
 
-
-Плагины: 
+Зависимости: 
 
     noUiSlider
     swiper
+    
+    
 Figma: 
 
-    https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1
+    [https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1](https://www.figma.com/file/Bznwxb5qXiC8blkIkGGgEj/Loft-Mebel?node-id=156%3A815&t=o2aySRxuP7FJquVx-1)
       
-Полный адаптив. Используется localStorage. Без jQuery.      
-JS код не самый лучший, неоптимизирован, и требует дополнительных правок в будущем.
 
 Запуск:
 
     1. npm i
     2. gulp
+    3. gulp build - для билд сборки (опционально)
+    
     
 GitHub Pages: 
 
-    https://one-ess.github.io/loft/build/index.html
+    [https://one-ess.github.io/loft/build/index.html](https://one-ess.github.io/loft/build/index.html)
